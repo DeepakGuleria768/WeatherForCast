@@ -1,0 +1,11 @@
+How to Apply This to ANY App: The "Design Audit"
+When you start a new app or look at an existing design:
+
+Find the Star: What's the main color used for your brand's logo, primary buttons, or the most important elements? That's Primary.
+Find the Supports: What color is used for accenting things that are important but not the "star"? That's Secondary.
+Find the Pops: Is there a third distinct accent color used sparingly for special details? That's Tertiary.
+Find the Containers: What color are your cards, dialogs, bottom sheets, or toolbars? That's Surface.
+Find the Canvas: What's the very deepest background color of the screen itself? That's Background.
+Find the Warnings: What color is used for error messages or invalid states? That's Error.
+Find the Text/Icons: For every piece of text or icon, identify the background it's on.
+If it's on Primary, its color is On Primary. If on Surface, it's On Surface, and so on.

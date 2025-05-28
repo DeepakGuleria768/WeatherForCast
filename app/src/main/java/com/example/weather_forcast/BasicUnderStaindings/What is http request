@@ -1,0 +1,48 @@
+Let's break down what an HTTP request is in a very simple way.
+
+Imagine you want to ask a question to someone far away, like asking a librarian for a specific book. You can't just shout; you need a way to communicate clearly and get an answer back.
+
+**What is HTTP?**
+
+* **HTTP** stands for **H**yper**T**ext **T**ransfer **P**rotocol.
+* Think of "Protocol" as a set of rules for how computers (or programs like your weather app) talk to each other over the internet. It's like the agreed-upon language they use.
+* "HyperText" refers to the content you see on the web, like text, images, videos, etc.
+* So, HTTP is the rulebook for sending and receiving all sorts of content over the internet.
+
+**What is an HTTP Request?**
+
+An **HTTP request** is simply **a message sent by a client (like your web browser, or your weather app) to a server (like the "Weather open API" in our flowchart) asking for something.**
+
+It's like writing a letter or sending a detailed instruction to that librarian.
+
+**What does an HTTP Request typically contain?**
+
+When your weather app sends an HTTP request to the "Weather open API," it's not just a simple "give me weather." It's a structured message that usually includes:
+
+1.  **Method (or Verb):** This tells the server *what you want to do*. The most common ones are:
+    * **GET:** You want to *get* some information. (Like asking the librarian, "Do you have the book 'The Lord of the Rings'?") This is what your weather app would use to fetch weather data.
+    * **POST:** You want to *send* some new information to the server (like submitting a form on a website, creating a new user).
+    * **PUT:** You want to *update* existing information on the server.
+    * **DELETE:** You want to *remove* something from the server.
+
+2.  **URL (Uniform Resource Locator):** This is the exact address of *what* you're asking for and *where* it is.
+    * For your weather app, it might look something like: `https://api.openweathermap.org/data/2.5/weather?q=Pathankot&appid=YOUR_API_KEY`
+    * `https://api.openweathermap.org` is the main address of the weather service.
+    * `/data/2.5/weather` tells the server you want the "weather" information from a specific part of their service.
+    * `?q=Pathankot&appid=YOUR_API_KEY` are "parameters" which are like extra details for your request. `q=Pathankot` means "the city is Pathankot," and `appid=YOUR_API_KEY` is your unique key to use their service.
+
+3.  **Headers:** These are like extra notes or instructions for the server. They provide more context about the request.
+    * Examples:
+        * `User-Agent`: Tells the server what kind of client is making the request (e.g., "Chrome browser," "My Weather App").
+        * `Accept`: Tells the server what type of answer you prefer (e.g., "I want the answer in JSON format").
+        * `Authorization`: Sometimes used to send a secret token to prove you're allowed to ask for that information.
+
+4.  **Body (optional):** For some request types (especially POST or PUT), you might send actual data in the body.
+    * If you were signing up on a website, the body of the POST request would contain your username, password, email, etc.
+    * For a simple GET request for weather, there's usually no body.
+
+**In summary:**
+
+An HTTP request is how your app (or browser) *talks* to servers on the internet. It's a structured message that clearly states *what*
+ you want, *where* to find it, and *how* you want to get it (or give it). Once the server gets this request, it processes it and sends
+ back an **HTTP Response** (which is the answer to your question, like the weather data in JSON format).
