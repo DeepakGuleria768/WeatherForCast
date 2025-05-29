@@ -2,10 +2,17 @@ package com.example.weather_forcast.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.weather_forcast.R
 
+
+val myFontFamily  = FontFamily(
+    Font(R.font.fontone),
+    Font(R.font.fonttwo)
+)
 // Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(

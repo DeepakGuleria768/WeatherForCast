@@ -13,11 +13,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.weather_forcast.View.HomeScreen
 import com.example.weather_forcast.View.SplashScreen
+import com.example.weather_forcast.ViewModel.WeatherViewModel
 import com.example.weather_forcast.ui.theme.Weather_forcastTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +33,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    appNavigation()
+                    AppNavigation()
                 }
 
             }
@@ -39,8 +42,11 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun appNavigation() {
+fun AppNavigation() {
     val navController = rememberNavController()
+
+    // get view model in composable
+    val weatherViewModel : WeatherViewModel = viewModel()
 
     NavHost(startDestination = "Splash", navController = navController) {
         composable("Splash") {
@@ -53,7 +59,7 @@ fun appNavigation() {
             )
         }
         composable("Home"){
-            HomeScreen()
+            HomeScreen(weatherViewModel)
         }
     }
 }
