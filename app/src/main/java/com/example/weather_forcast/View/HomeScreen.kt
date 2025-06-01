@@ -241,8 +241,7 @@ fun CompactScreen(
                 }
 
                 NetworkResponseClass.loading -> {
-                    CircularProgressIndicator(
-                    )
+                    CircularProgressIndicator()
                 }
 
                 is NetworkResponseClass.Success -> {

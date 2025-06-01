@@ -26,7 +26,6 @@ class WeatherViewModel : ViewModel(){
         //viewModelScope.launch() is your go-to tool in a ViewModel for starting any task that might take a long time, ensuring your app stays smooth and responsive for the user.
         viewModelScope.launch {
             // wrap this whole is try catch
-            delay(2000)
             try{ val response = weatherApi.getWeather(Constants.apiKey, city = city)
                 if(response.isSuccessful){
                     response.body()?.let{
