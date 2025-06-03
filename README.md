@@ -8,6 +8,9 @@
     <li>
         <strong>Kotlin:</strong> As the primary programming language, Kotlin ensures conciseness, safety, and full interoperability, making development efficient and enjoyable.
     </li>
+      <li>
+        <strong>MVVM:</strong> MVVM (Model-View-ViewModel) is an architectural pattern that separates the UI (View) from the business logic (Model) using a ViewModel as an intermediary, promoting better testability and maintainability.
+    </li>
     <li>
         <strong>Jetpack Compose:</strong> The declarative UI toolkit powers the native Android user interface, enabling faster UI development with a strong focus on reusability and maintainability.
     </li>
