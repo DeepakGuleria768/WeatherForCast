@@ -14,7 +14,7 @@
 
 <h2>App showcase Vedio</h2>
 
-<video src="https://github.com/user-attachments/assets/2abeace4-0600-43c8-9b32-808a440c339e" controls>
+<video src="https://github.com/user-attachments/assets/2abeace4-0600-43c8-9b32-808a440c339e" width = "200" controls>
     Your browser does not support the video tag.
 </video>
 
