@@ -1,7 +1,5 @@
 
-<h2>App showcase Vedio</h2>
 
-https://github.com/user-attachments/assets/2abeace4-0600-43c8-9b32-808a440c339e
 
 <h2>TECH STACKS</h2>
 <p>Kotlin</p>
@@ -12,4 +10,8 @@ https://github.com/user-attachments/assets/2abeace4-0600-43c8-9b32-808a440c339e
 <p>Gson</p>
 <p>Lottie Animation (for splash screen)</p>
 <p>All Screen Compatible using WindowSizeClass library</p>
+
+<h2>App showcase Vedio</h2>
+
+https://github.com/user-attachments/assets/2abeace4-0600-43c8-9b32-808a440c339e
 
